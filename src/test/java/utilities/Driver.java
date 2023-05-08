@@ -32,7 +32,7 @@ public class Driver {
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, ConfigReader.getProperty("platformVersion"));
             desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, ConfigReader.getProperty("deviceName"));
             desiredCapabilities.setCapability(MobileCapabilityType.APP, ConfigReader.getProperty("appPath"));
-            desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, "false");
+            desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, "true");
             desiredCapabilities.setCapability("autoAcceptAlert",true);
 
             if (ConfigReader.getProperty("platformName").equals("android")) {

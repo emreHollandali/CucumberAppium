@@ -16,4 +16,7 @@ public class HomePage {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='API Demos']")
     public WebElement apiDemos;
 
+    @AndroidFindBy(xpath="//android.widget.TextView[@text='Support v4 Demos']")
+    public WebElement Supportv4Demos;
+
 }
